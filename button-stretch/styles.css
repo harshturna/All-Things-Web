@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #E1332d;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 1em 2em;
+    border: 0.075em solid #E1332d;
+    letter-spacing: -2px;
+    transition: 0.5s;
+    font-family:'Courier New', Courier, monospace
+}
+
+a:hover {
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    border: 0.175em solid #E1332d
+}
