@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    height: 100vh;
+    letter-spacing: 1px;
+
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    padding: 0 0 2rem;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+#page-top {
+    background-color: #087f5b;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+#page-top h1, 
+#page-top p {
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+#page-top input {
+    font-size: 1.5rem;
+    width: 90%;
+    max-width: 250px;
+    margin: 3rem auto;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.811);
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+#page-top input::placeholder {
+    
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+#check {
+    max-width: 280px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#check #hide {
+    width: 10%;
+    margin: 0;
+    display: inline-block;
+}
+
+/* ############################ */
+
+#add-item {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#add-item input {
+    font-size: 1.5rem;
+    width: 400px;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.816);
+    color: #333;
+}
+
+
+#add-item button {
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #087f5b;
+}
+
+#add-item button:hover {
+    background-color: #126c51;
+}
+
+#grocery-list {
+    margin: 2em;
+}
+
+#grocery-list ul {
+    list-style: none;
+}
+
+#grocery-list li {
+    padding: 1em;
+    border-left: 5px solid rgb(211, 211, 211) ;
+    margin: 1.5em 1em;
+}
+
+#grocery-list li:hover {
+    border-color: #087f5b;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+    background: #da4343;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.delete:hover {
+    background: #aa2525;
+}
