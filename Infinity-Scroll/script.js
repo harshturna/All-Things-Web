@@ -8,6 +8,8 @@ let totalImages = 0;
 
 
 const count = 10;
+
+// Private key
 const apiKey = 'koSAIlDETPXZDYvsztnknRYZDtu73TJvuS8FrH6MFfw';
 
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
@@ -79,7 +81,7 @@ async function getPhotos() {
     }
 }
 
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', () => {
     
     if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready){
         ready = false;
