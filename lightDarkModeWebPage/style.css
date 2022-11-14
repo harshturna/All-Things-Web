@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Questrial&family=Roboto&display=swap');
 
 :root {
   --primary-color: rgb(255, 92, 92);
@@ -17,15 +17,17 @@
   --secondary-color: #03dac5;
   --on-primary: #000;
   --on-background: rgba(255, 255, 255, 0.9);
-  --on-background-alt: rgba(255, 255, 255, 0.7);
+  --on-background-alt: rgba(255, 255, 255, 0.8);
   --background: #121212;
 }
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
+  font-family: Roboto, sans-serif;
   margin: 0;
   color: var(--on-background);
   background-color: var(--background);
@@ -41,6 +43,7 @@ section {
 }
 
 h1 {
+  font-family: Pacifico, sans-serif;
   font-size: 100px;
   margin-bottom: 0;
 }
@@ -48,12 +51,14 @@ h1 {
 h2 {
   font-size: 32px;
   font-weight: normal;
+  color: var(--on-background-alt)
 }
 
 /* Navigation */
 nav {
   z-index: 10;
   position: fixed;
+  font-family: Questrial, sans-serif;
   font-size: 24px;
   letter-spacing: 3px;
   padding: 25px;
@@ -167,6 +172,10 @@ p {
 }
 
 /* Contact Section */
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+}
 .fab {
   font-size: 100px;
   margin-right: 50px;
